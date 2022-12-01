@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// Write a program to identify if the number is Perfect number or not
+
 bool isPerfect(int n)
 {
     long sum = 0;
