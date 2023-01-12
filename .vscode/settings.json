@@ -1,10 +1,9 @@
 {
-    "files.associations": {
-        "*.tcc": "cpp",
-        "string": "cpp",
-        "unordered_map": "cpp",
-        "complex": "cpp",
-        "iostream": "cpp",
-        "ostream": "cpp"
-    }
+  "files.associations": {
+    "*.tcc": "cpp",
+    "string": "cpp",
+    "unordered_map": "cpp",
+    "complex": "cpp",
+    "iostream": "cpp",
+  }
 }
