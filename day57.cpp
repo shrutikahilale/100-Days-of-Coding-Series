@@ -1,32 +1,36 @@
 #include <iostream>
 using namespace std;
 
-// C++ Program to Store Information of a Student in a Structure. This program stores the information (name, roll and marks entered by the user) of a student in a structure and displays it on the screen.
+// Pass or Fail
 
-struct Student {
-    string fname, lname;
-    int roll;
-    int marks[3];
-
-    Student(string fn, string ln, int r, int m1, int m2, int m3) {
-        this->fname = fn;
-        this->lname = ln;
-        this->roll = r;
-        this->marks[0] = m1;
-        this->marks[1] = m2;
-        this->marks[2] = m3;
-    }
-};
+// Anusree is struggling to pass a certain college course.
+// The test has a total of N question, each question carries 3 marks for a correct answer and −1 for an incorrect answer. Anusree is a risk-averse person so he decided to attempt all the questions. It is known that Anusree got X questions correct and the rest of them incorrect. For Anusree to pass the course he must score at least P marks.
+// Will Anusree be able to pass the exam or not?
 
 int main()
 {
-    struct Student st = Student("Shrutika", "Hilale", 321026, 18, 16, 20);
 
-    cout<<"Name: "<<st.fname<< " "<<st.lname<<"\n";
-    cout<<"Roll: "<<st.roll<<"\n";
-    cout<<"Marks in Data structures and algorithms: "<<st.marks[0]<<"\n";
-    cout<<"Marks in Operating systems: "<<st.marks[1]<<"\n";
-    cout<<"Marks in Computer networks: "<<st.marks[2]<<"\n";
+    int t;
+    cin >> t;
+
+    while (t--)
+    {
+        int n, x, p;
+        cin >> n >> x >> p;
+
+        int scored_p = x * 3;
+        int scored_n = (n - x) * (-1);
+        int scored = scored_p + scored_n;
+
+        if (scored < p)
+        {
+            cout << "FAIL\n";
+        }
+        else
+        {
+            cout << "PASS\n";
+        }
+    }
 
     return 0;
 }
