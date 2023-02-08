@@ -5,5 +5,6 @@
     "unordered_map": "cpp",
     "complex": "cpp",
     "iostream": "cpp",
+    "vector": "cpp"
   }
 }
